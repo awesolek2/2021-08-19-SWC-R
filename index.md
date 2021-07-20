@@ -76,6 +76,27 @@ displayed if the 'eventbrite' field in the header is not set.
   registration box below, please check your adblocker settings.</strong>
 <iframe
   src=
+        <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com/e/software-carpentris-rrstudio-tickets-163385563619" rel="noopener noreferrer" target="_blank"></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-163385563619" type="button">Buy Tickets</button>
+<noscript></a>Buy Tickets on Eventbrite</noscript>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '163385563619',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-163385563619',
+        onOrderComplete: exampleCallback
+    });
+</script>
   frameborder="0"
   width="100%"
   height="280px"
