@@ -75,7 +75,6 @@ displayed if the 'eventbrite' field in the header is not set.
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
-  src=
         <!-- Noscript content for added SEO -->
 <noscript><a href="https://www.eventbrite.com/e/software-carpentris-rrstudio-tickets-163385563619" rel="noopener noreferrer" target="_blank"></noscript>
 <!-- You can customize this button any way you like -->
