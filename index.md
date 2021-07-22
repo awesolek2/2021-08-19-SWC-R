@@ -74,7 +74,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
-<iframe 
+  
 <div id="eventbrite-widget-container-163385563619"></div>
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
@@ -95,7 +95,7 @@ displayed if the 'eventbrite' field in the header is not set.
         onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
 </script>
-</iframe>
+
 {% endif %}
 
 
