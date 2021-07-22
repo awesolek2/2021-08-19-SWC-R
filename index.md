@@ -75,11 +75,26 @@ displayed if the 'eventbrite' field in the header is not set.
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe 
-  src= https://www.eventbrite.com/e/software-carpentris-rrstudio-tickets-163385563619
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
+<div id="eventbrite-widget-container-163385563619"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '163385563619',
+        iframeContainerId: 'eventbrite-widget-container-163385563619',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
 </iframe>
 {% endif %}
 
